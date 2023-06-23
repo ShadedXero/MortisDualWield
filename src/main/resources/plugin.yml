@@ -1,4 +1,6 @@
 name: MortisDualWield
 version: '${project.version}'
 main: me.none030.mortisdualwield.MortisDualWield
-api-version: 1.19
+api-version: 1.13
+depend:
+  - WeaponMechanics

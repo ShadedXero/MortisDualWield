@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.none030</groupId>
+    <groupId>com.mortisdevelopment</groupId>
     <artifactId>MortisDualWield</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -38,6 +38,12 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+                            <relocations>
+                                <relocation>
+                                    <pattern>me.none030.mortiscorepaper</pattern>
+                                    <shadedPattern>com.mortisdevelopment.mortisdualwield.mortiscorepaper</shadedPattern>
+                                </relocation>
+                            </relocations>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
@@ -67,7 +73,25 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.19.4-R0.1-SNAPSHOT</version>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.none030</groupId>
+            <artifactId>MortisCorePaper</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.deecaad</groupId>
+            <artifactId>WeaponMechanics</artifactId>
+            <version>2.5.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.deecaad</groupId>
+            <artifactId>MechanicsCore</artifactId>
+            <version>2.4.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
