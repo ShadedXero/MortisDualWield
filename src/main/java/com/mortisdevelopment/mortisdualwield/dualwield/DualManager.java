@@ -12,6 +12,7 @@ import java.util.*;
 
 public class DualManager {
 
+    private final MortisDualWield plugin = MortisDualWield.getInstance();
     private final DataManager dataManager;
     private final Set<String> weaponTitles;
     private final Set<UUID> online;
@@ -20,7 +21,6 @@ public class DualManager {
         this.dataManager = dataManager;
         this.weaponTitles = new HashSet<>();
         this.online = new HashSet<>();
-        MortisDualWield plugin = MortisDualWield.getInstance();
         plugin.getServer().getPluginManager().registerEvents(new DualListener(this), plugin);
     }
 
@@ -125,16 +125,16 @@ public class DualManager {
         return item;
     }
 
-    public boolean hasPlayer(@NotNull UUID uuid) {
-        return dataManager.hasPlayer(uuid);
+    public boolean hasEquiped(@NotNull UUID uuid) {
+        return dataManager.hasEquiped(uuid);
     }
 
-    public void addPlayer(@NotNull UUID uuid) {
-        dataManager.addPlayer(uuid);
+    public void addEquiped(@NotNull UUID uuid) {
+        dataManager.addEquiped(uuid);
     }
 
-    public void removePlayer(@NotNull UUID uuid) {
-        dataManager.removePlayer(uuid);
+    public void removeEquiped(@NotNull UUID uuid) {
+        dataManager.removeEquiped(uuid);
     }
 
     public DataManager getDataManager() {

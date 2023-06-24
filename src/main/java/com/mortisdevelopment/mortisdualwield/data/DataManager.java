@@ -34,7 +34,7 @@ public class DataManager {
 
     private void initialize() {
         database.execute("CREATE TABLE IF NOT EXISTS MortisDualWield(uuid varchar(36) primary key, item mediumtext)");
-        database.execute("CREATE TABLE IF NOT EXISTS MortisDualWieldPlayers(uuid varchar(36))");
+        database.execute("CREATE TABLE IF NOT EXISTS MortisDualWieldEquiped(uuid varchar(36))");
     }
 
     private void loadDatabase() {
@@ -52,7 +52,7 @@ public class DataManager {
 
     private void loadDatabase2() {
         try {
-            ResultSet result = database.query("SELECT * FROM MortisDualWieldPlayers");
+            ResultSet result = database.query("SELECT * FROM MortisDualWieldEquiped");
             while (result.next()) {
                 UUID uuid = UUID.fromString(result.getString("uuid"));
                 dualWielding.add(uuid);
@@ -76,17 +76,17 @@ public class DataManager {
         return itemByUUID.get(uuid);
     }
 
-    public void addPlayer(@NotNull UUID uuid) {
-        database.update("INSERT INTO MortisDualWieldPlayers(uuid) VALUES (?)", uuid);
+    public void addEquiped(@NotNull UUID uuid) {
+        database.update("INSERT INTO MortisDualWieldEquiped(uuid) VALUES (?)", uuid);
         dualWielding.add(uuid);
     }
 
-    public boolean hasPlayer(@NotNull UUID uuid) {
+    public boolean hasEquiped(@NotNull UUID uuid) {
         return dualWielding.contains(uuid);
     }
 
-    public void removePlayer(@NotNull UUID uuid) {
-        database.update("DELETE FROM MortisDualWieldPlayers WHERE uuid = ?", uuid);
+    public void removeEquiped(@NotNull UUID uuid) {
+        database.update("DELETE FROM MortisDualWieldEquiped WHERE uuid = ?", uuid);
         dualWielding.remove(uuid);
     }
 
