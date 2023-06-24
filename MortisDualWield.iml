@@ -65,8 +65,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm:9.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm-commons:9.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm-tree:9.4" level="project" />
-    <orderEntry type="library" name="Maven: me.none030:MortisCorePaper:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.28" level="project" />
+    <orderEntry type="library" name="Maven: com.mortisdevelopment:MortisCorePaper:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.h2database:h2:2.1.214" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: me.deecaad:WeaponMechanics:2.5.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: me.deecaad:MechanicsCore:2.4.1" level="project" />
   </component>
