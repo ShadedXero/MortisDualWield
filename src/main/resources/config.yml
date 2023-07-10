@@ -1,2 +1,5 @@
+messages:
+  hands-not-available: "You need to have both hands available to shoot!"
+
 weapons:
   - Deagle

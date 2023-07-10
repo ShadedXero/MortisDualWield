@@ -1,5 +1,6 @@
 package com.mortisdevelopment.mortisdualwield.dualwield;
 
+import com.mortisdevelopment.mortiscorepaper.managers.CoreManager;
 import com.mortisdevelopment.mortiscorepaper.utils.ItemUtils;
 import com.mortisdevelopment.mortisdualwield.MortisDualWield;
 import com.mortisdevelopment.mortisdualwield.data.DataManager;
@@ -10,9 +11,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
-public class DualManager {
+public class DualManager extends CoreManager {
 
-    private final MortisDualWield plugin = MortisDualWield.getInstance();
     private final DataManager dataManager;
     private final Set<String> weaponTitles;
     private final Set<UUID> online;
@@ -21,6 +21,7 @@ public class DualManager {
         this.dataManager = dataManager;
         this.weaponTitles = new HashSet<>();
         this.online = new HashSet<>();
+        MortisDualWield plugin = MortisDualWield.getInstance();
         plugin.getServer().getPluginManager().registerEvents(new DualListener(this), plugin);
     }
 

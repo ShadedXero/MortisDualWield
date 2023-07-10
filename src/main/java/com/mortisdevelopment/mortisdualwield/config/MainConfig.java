@@ -25,6 +25,7 @@ public class MainConfig extends Config {
         FileConfiguration config = YamlConfiguration.loadConfiguration(file);
         manager.setDualManager(new DualManager(manager.getDataManager()));
         loadWeapons(config);
+        manager.getDualManager().addMessages(loadMessages(config.getConfigurationSection("messages")));
     }
 
     private void loadWeapons(FileConfiguration config) {
