@@ -6,7 +6,7 @@
 
     <groupId>com.mortisdevelopment</groupId>
     <artifactId>MortisDualWield</artifactId>
-    <version>2.0</version>
+    <version>2.3</version>
     <packaging>jar</packaging>
 
     <name>MortisDualWield</name>
@@ -40,8 +40,8 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.mortisdevelopment.mortiscorepaper</pattern>
-                                    <shadedPattern>com.mortisdevelopment.mortisdualwield.mortiscorepaper</shadedPattern>
+                                    <pattern>org.h2</pattern>
+                                    <shadedPattern>com.mortisdevelopment.mortisdualwield.h2</shadedPattern>
                                 </relocation>
                             </relocations>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
@@ -77,15 +77,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.mortisdevelopment</groupId>
-            <artifactId>MortisCorePaper</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>2.1.214</version>
+            <version>2.2.220</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

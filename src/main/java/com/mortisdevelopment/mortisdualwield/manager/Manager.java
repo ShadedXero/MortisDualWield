@@ -2,7 +2,7 @@ package com.mortisdevelopment.mortisdualwield.manager;
 
 import com.mortisdevelopment.mortisdualwield.MortisDualWield;
 import com.mortisdevelopment.mortisdualwield.config.MainConfig;
-import com.mortisdevelopment.mortisdualwield.data.DataManager;
+import com.mortisdevelopment.mortisdualwield.databases.DataManager;
 import com.mortisdevelopment.mortisdualwield.dualwield.DualManager;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;

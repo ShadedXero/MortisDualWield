@@ -1,9 +1,9 @@
 package com.mortisdevelopment.mortisdualwield.dualwield;
 
-import com.mortisdevelopment.mortiscorepaper.managers.CoreManager;
-import com.mortisdevelopment.mortiscorepaper.utils.ItemUtils;
 import com.mortisdevelopment.mortisdualwield.MortisDualWield;
-import com.mortisdevelopment.mortisdualwield.data.DataManager;
+import com.mortisdevelopment.mortisdualwield.databases.DataManager;
+import com.mortisdevelopment.mortisdualwield.manager.CoreManager;
+import com.mortisdevelopment.mortisdualwield.utils.ItemUtils;
 import me.deecaad.weaponmechanics.WeaponMechanics;
 import me.deecaad.weaponmechanics.WeaponMechanicsAPI;
 import org.bukkit.inventory.ItemStack;

@@ -1,6 +1,6 @@
 package com.mortisdevelopment.mortisdualwield.dualwield;
 
-import com.mortisdevelopment.mortisdualwield.data.ItemData;
+import com.mortisdevelopment.mortisdualwield.databases.ItemData;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
 

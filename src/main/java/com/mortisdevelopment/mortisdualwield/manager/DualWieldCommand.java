@@ -1,6 +1,6 @@
 package com.mortisdevelopment.mortisdualwield.manager;
 
-import com.mortisdevelopment.mortiscorepaper.utils.MessageUtils;
+import com.mortisdevelopment.mortisdualwield.utils.MessageUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;

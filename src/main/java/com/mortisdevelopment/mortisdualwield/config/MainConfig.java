@@ -1,6 +1,5 @@
 package com.mortisdevelopment.mortisdualwield.config;
 
-import com.mortisdevelopment.mortiscorepaper.configs.Config;
 import com.mortisdevelopment.mortisdualwield.dualwield.DualManager;
 import com.mortisdevelopment.mortisdualwield.manager.Manager;
 import org.bukkit.configuration.file.FileConfiguration;
